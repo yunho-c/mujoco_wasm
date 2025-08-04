@@ -1,28 +1,31 @@
 {
-  "name": "mujoco_wasm",
-  "version": "0.0.2",
-  "description": "Run MuJoCo simulations in browser",
-  "main": "dist/mujoco_wasm.js",
-  "directories": {
-    "lib": "lib"
+  "name": "mujoco_wasm_contrib",
+  "version": "0.0.4",
+  "description": "A modern, SSR-safe MuJoCo WASM package.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "files": [
+    "index.js",
+    "mujoco_wasm.js",
+    "mujoco_wasm.wasm",
+    "mujoco_wasm.d.ts"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zalo/mujoco_wasm.git"
+    "url": "git+https://github.com/yunho-c/mujoco_wasm.git"
   },
   "keywords": [
     "mujoco",
     "wasm"
   ],
-  "author": "Sergei Surovtsev and Johnathon Selstad",
+  "author": "Sergei Surovtsev, Johnathon Selstad, and Yunho Cho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zalo/mujoco_wasm/issues"
+    "url": "https://github.com/yunho-c/mujoco_wasm/issues"
   },
-  "homepage": "https://github.com/zalo/mujoco_wasm#readme",
+  "homepage": "https://github.com/yunho-c/mujoco_wasm#readme",
   "dependencies": {
     "three": "^0.150.1"
   }

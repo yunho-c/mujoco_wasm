@@ -14,6 +14,10 @@
       <img src="https://img.shields.io/badge/license-MIT-brightgreen" title="License: MIT"></a>
 </p>
 
+This is a fork of [zalo's `mujoco_wasm` repo](https://github.com/zalo/mujoco_wasm), with attempts to modernize Emscripten tooling for better compatibility with SSR frameworks. 
+
+---
+
 ## The Power of MuJoCo in your Browser.
 
 Load and Run MuJoCo 2.3.1 Models using JavaScript and WebAssembly.
