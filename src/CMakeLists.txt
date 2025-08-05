@@ -13,9 +13,10 @@ set(EMCC_LINKER_FLAGS_LIST
   -s USE_ES6_IMPORT_META=1
   -s FORCE_FILESYSTEM=1
   -s EXPORT_NAME=load_mujoco
+  -fexceptions
   -s DISABLE_EXCEPTION_CATCHING=0 # Enable full C++ exception handling to be caught by JS
   -gsource-map # Add full debug information and source maps
-  -s "EXPORTED_RUNTIME_METHODS=['FS','MEMFS','getExceptionMessage']" # Export the filesystem methods AND the exception helper
+  -s "EXPORTED_RUNTIME_METHODS=['FS','MEMFS','getExceptionMessage']" # Export the filesystem methods and the exception helper
   # -s EXCEPTION_CATCHING_ALLOWED=['load_from_xml']  # Temporarily disabled for debugging
 )
 string(REPLACE ";" " " EMCC_LINKER_FLAGS "${EMCC_LINKER_FLAGS_LIST}")

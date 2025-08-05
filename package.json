@@ -1,19 +1,20 @@
 {
   "name": "mujoco_wasm_contrib",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "description": "A modern, SSR-safe MuJoCo WASM package.",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./index.js",
-      "types": "./mujoco_wasm.d.ts"
+      "import": "./dist/prod/index.js",
+      "types": "./dist/mujoco_wasm.d.ts"
+    },
+    "./debug": {
+      "import": "./dist/debug/index.js",
+      "types": "./dist/mujoco_wasm.d.ts"
     }
   },
   "files": [
-    "index.js",
-    "mujoco_wasm.js",
-    "mujoco_wasm.wasm",
-    "mujoco_wasm.d.ts"
+    "dist"
   ],
   "repository": {
     "type": "git",
