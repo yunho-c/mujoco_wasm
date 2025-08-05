@@ -4,7 +4,10 @@
   "description": "A modern, SSR-safe MuJoCo WASM package.",
   "type": "module",
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "import": "./index.js",
+      "types": "./mujoco_wasm.d.ts"
+    }
   },
   "files": [
     "index.js",
