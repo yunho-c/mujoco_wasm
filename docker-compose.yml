@@ -9,4 +9,4 @@ services:
     working_dir: /src
     tty: true
     stdin_open: true
-    command: /bin/bash
+    command: /bin/bash /src/build_linux.sh
