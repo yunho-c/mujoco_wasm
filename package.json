@@ -1,6 +1,6 @@
 {
   "name": "mujoco_wasm_contrib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A modern, SSR-safe MuJoCo WASM package.",
   "type": "module",
   "exports": {
