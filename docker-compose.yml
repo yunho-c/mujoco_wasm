@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  emscripten:
+    image: emscripten/emsdk:3.1.56
+    platform: linux/amd64
+    container_name: emscripten_3.1.56
+    volumes:
+      - ./:/src
+    working_dir: /src
+    tty: true
+    stdin_open: true
+    command: /bin/bash /src/build_linux.sh
